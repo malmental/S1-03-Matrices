@@ -8,6 +8,7 @@ $student = [
     "Favourite food" => "Cheese",
 ];
 
+// print_r imprime legiblemente para 'humano', con formato
 print_r($student);
 
 ?>
