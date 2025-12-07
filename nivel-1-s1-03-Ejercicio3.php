@@ -2,12 +2,10 @@
 
 function palabraContieneCaracter (array $matrizDePalabras, string $caracter, bool $ignorarMayusculas = true): bool 
 {
-    // Se define una regla inicial: si la matriz está vacía, by default, la condicion se cumple.
     if (empty($matrizDePalabras)) {
         return true;
     }
 
-    // Recorremos el Array
     foreach($matrizDePalabras as $palabra) {
         if ($ignorarMayusculas) {
             $palabraEnMinuscula = strtolower($palabra);
@@ -15,7 +13,7 @@ function palabraContieneCaracter (array $matrizDePalabras, string $caracter, boo
 
             // Utilizaremos str_contains(), para saber si un string contiene otro devolviendo bool
             if (!str_contains($palabraEnMinuscula, $caracterEnMinuscula)) {
-                return false; // y no necesitamos seguir comprobando
+                return false;
             }
         } else {
             // Y si consideramos mayusculas
@@ -27,7 +25,7 @@ function palabraContieneCaracter (array $matrizDePalabras, string $caracter, boo
     return true;
 }
 
-// Ejemplos de verificación, creamos el array de la consigna
+// Ejecucion del programa
 $palabras = ["hola", "Php", "Html"];
 
 // Reemplace el caracter que se quiere comprobar, mayuscula o minuscula funcionará

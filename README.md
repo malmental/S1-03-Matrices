@@ -1,2 +1,9 @@
-# s1-03-Matrices
-    Se subirá el progreso del la tasca 3 en referencia a Arrays
+# Sprint 1
+  **Descripción**: Repositorio creado para la tasca S1.03.Arrays
+  
+  ## 🛠 Tecnologies  
+  - PHP
+  
+  ## 🚀 Instal·lació  
+  1. Clonar el repositori: `git clone ...`  
+  2. Ejecutar ficheros *.php
