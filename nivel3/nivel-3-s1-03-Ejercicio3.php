@@ -18,7 +18,6 @@ function esPrimo ($numero) {
     return true;
 }
 
-
 // Paso 2: utilizar array_reduce(array, función_reductora, valor_inicial);
 $sumaPrimos = array_reduce($numeros, function($acumulador, $numero){
     if(esPrimo($numero)) {
