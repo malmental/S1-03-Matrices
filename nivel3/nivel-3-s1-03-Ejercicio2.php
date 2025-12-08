@@ -2,7 +2,7 @@
 
 $strings = ['hola', 'juan', 'luis', 'pepe', 'maria'];
 
-// Opción 1: Usando función anónima
+// Usando función anónima
 $stringsPares = array_filter($strings, function ($string) {
     // strlen() devuelve la longitud del string
     // El operador % devuelve el resto de una división
@@ -10,17 +10,17 @@ $stringsPares = array_filter($strings, function ($string) {
     return strlen($string) % 2 == 0;
 });
 
-echo "Array original:\n";
+echo "Array original: " . PHP_EOL;
 print_r($strings);
 
-echo "\nStrings con longitud PAR:\n";
+echo "Strings con longitud PAR: " . PHP_EOL;
 print_r($stringsPares);
 
-echo "\n--- Desglose de cada elemento ---\n";
+echo "Desglose de cada elemento" . PHP_EOL;
 foreach ($strings as $string) {
     $longitud = strlen($string);
-    $esPar = ($longitud % 2 == 0) ? "PAR ✓" : "IMPAR ✗";
-    echo "'$string' tiene $longitud caracteres → $esPar\n";
+    $esPar = ($longitud % 2 == 0) ? "PAR " : "IMPAR ";
+    echo "'$string' tiene $longitud caracteres → $esPar";
 }
 
 ?>
